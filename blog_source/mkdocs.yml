@@ -1,0 +1,7 @@
+site_name: Joacim Wall Develper Blog
+theme: 
+    name: windmill
+    highlightjs: true
+nav:
+    - Home: index.md
+    - Multilingual Extension: multilingual_extension.md
