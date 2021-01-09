@@ -2,6 +2,7 @@
 title: "Adding multilingual support to Xamarin Forms"
 authors: ["joacim.Wall@gmail.com"]
 date: "2021-01-09 12:18"
+canonical_url: https://joacimwall.github.io/#multilingual_support/
 ---
 
 ## Adding multilingual support to Xamarin

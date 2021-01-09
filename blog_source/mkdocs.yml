@@ -1,5 +1,8 @@
 site_name: Joacim Wall Developer Blog
 site_url: https://joacimwall.github.io/
+site_description: Developer blog focus on Xamarin
+repo_url: https://github.com/JoacimWall?tab=repositories
+site_author: Joacim Wall 
 theme: 
     name: windmill
     highlightjs: true

@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
+    
     <title>Joacim Wall Developer Blog</title>
+    <description>Developer blog focus on Xamarin</description>
     <link>https://joacimwall.github.io/</link>
     <atom:link href="https://joacimwall.github.io/feed_rss_created.xml" rel="self" type="application/rss+xml" />
-    <docs></docs>
-    <pubDate>Sat, 09 Jan 2021 13:21:29 -0000</pubDate>
-    <lastBuildDate>Sat, 09 Jan 2021 13:21:29 -0000</lastBuildDate>
+
+    
+    <managingEditor>Joacim Wall</managingEditor>
+    
+    <docs>https://github.com/JoacimWall?tab=repositories/</docs>
+    
+
+    
+    <pubDate>Sat, 09 Jan 2021 13:51:45 -0000</pubDate>
+    <lastBuildDate>Sat, 09 Jan 2021 13:51:45 -0000</lastBuildDate>
     <ttl>1440</ttl>
+
+    
     <generator>MkDocs RSS plugin - v0.11.0</generator>
+
+    
     
     <image>
       <url>https://joacimwall.github.io/img/feed-icon.png</url>
@@ -16,15 +29,20 @@
       <link>https://joacimwall.github.io/</link>
     </image>
     
+
+    
     <item>
       <title>Add multilingual support to Xamarin</title>
       <description>## Adding multilingual support to Xamarin
-In this article I will show you how to add multilingual support to a Xamarin forms project.</description>
+In this article I will show you how to add multilingual support to a Xamarin forms project. We will use standard Resou</description>
       <link>https://joacimwall.github.io/multilingual_support/</link>
       <pubDate>Sat, 09 Jan 2021 11:18:00 -0000</pubDate>
       <source url="https://joacimwall.github.io/feed_rss_created.xml">Joacim Wall Developer Blog</source>
       <guid isPermaLink="true">https://joacimwall.github.io/multilingual_support/</guid>
       
     </item>
+    
+   
+    
   </channel>
 </rss>
