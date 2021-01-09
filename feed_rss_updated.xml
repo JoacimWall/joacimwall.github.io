@@ -8,14 +8,14 @@
     <atom:link href="https://joacimwall.github.io/feed_rss_updated.xml" rel="self" type="application/rss+xml" />
 
     
-    <managingEditor>Joacim Wall</managingEditor>
+    <managingEditor>Joacim.Wall@gmail.com</managingEditor>
     
-    <docs>https://github.com/JoacimWall?tab=repositories/</docs>
+    <docs></docs>
     
 
     
-    <pubDate>Sat, 09 Jan 2021 13:51:45 -0000</pubDate>
-    <lastBuildDate>Sat, 09 Jan 2021 13:51:45 -0000</lastBuildDate>
+    <pubDate>Sat, 09 Jan 2021 14:00:43 -0000</pubDate>
+    <lastBuildDate>Sat, 09 Jan 2021 14:00:43 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -37,13 +37,13 @@
       <description>## Adding multilingual support to Xamarin
 In this article I will show you how to add multilingual support to a Xamarin forms project. We will use standard Resou</description>
       <link>https://joacimwall.github.io/multilingual_support/</link>
-      <pubDate>Sat, 09 Jan 2021 13:18:02 -0000</pubDate>
+      <pubDate>Sat, 09 Jan 2021 13:54:53 -0000</pubDate>
       <source url="https://joacimwall.github.io/feed_rss_updated.xml">Joacim Wall Developer Blog</source>
       <guid isPermaLink="true">https://joacimwall.github.io/multilingual_support/</guid>
       
     </item>
     
-    
+   
     
   </channel>
 </rss>
