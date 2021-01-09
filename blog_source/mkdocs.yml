@@ -1,7 +1,7 @@
-site_name: Joacim Wall Develper Blog
+site_name: Joacim Wall Developer Blog
 theme: 
     name: windmill
     highlightjs: true
 nav:
     - Home: index.md
-    - Multilingual Extension: multilingual_extension.md
+    - Add multilingual support to Xamarin: multilingual_support.md
