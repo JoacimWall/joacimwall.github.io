@@ -1,4 +1,10 @@
-## Add multilingual support to Xamarin
+---
+title: "Adding multilingual support to Xamarin Forms"
+authors: ["joacim.Wall@gmail.com"]
+date: "2021-01-09 12:18"
+---
+
+## Adding multilingual support to Xamarin
 In this article I will show you how to add multilingual support to a Xamarin forms project. We will use standard Resources files to handle the different languages and in part 2 I will show you how to use the [Multilingual Extension](https://github.com/JoacimWall/Visual-studio-multilingual-extension) for simplify the synchronization from the master file to different language files. 
 
 ### Lets get started
