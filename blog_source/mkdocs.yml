@@ -5,14 +5,4 @@ theme:
 nav:
     - Home: index.md
     - Add multilingual support to Xamarin: multilingual_support.md
- plugins:
-  - rss:
-      abstract_chars_count: 160
-      date_from_meta:
-        as_creation: "date"
-        as_update: false
-        datetime_format: "%Y-%m-%d %H:%M"
-      feed_ttl: 1440
-      image: https://joacimwall.github.io/img/feed-icon.png
-      length: 20
-      pretty_print: false
+
