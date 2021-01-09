@@ -16,4 +16,4 @@ plugins:
       feed_ttl: 1440
       image: https://joacimwall.github.io/img/feed-icon.png
       length: 20
-      pretty_print: false
+      pretty_print: true
