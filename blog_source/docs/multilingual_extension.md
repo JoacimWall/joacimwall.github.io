@@ -25,11 +25,12 @@ Go to Extension Manager and search for Multilingual Extension or Walltec and you
 ### Adding a new translation and synchronize
  There are two ways to sync the resx files. 
  Right-click the master file and select "Sync all .xx-x.resx files with this". Then all files that are in the same folder and follow the naming standard .xx-xx.resx  will be synchronized with the master file. 
-![Screenshot](img/multilingual_extension/SyncAllFilePopUpDialog.png)![Screenshot](img/multilingual_extension/SyncFilePopUpDialog.png)
 
- 
+<img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/SyncAllFilePopUpDialog.png">
+
 Right-click one of the language files (AppResources.fr-FR.resx) and select "Sync this .xx-x.resx file". This file will then be synchronized with the master file.
 
+<img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/SyncFilePopUpDialog.png">
 
 the synchronization will not only add translations to the language files it will also remove translation that are not present in the master file.
 
