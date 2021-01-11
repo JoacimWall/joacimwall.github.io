@@ -14,8 +14,8 @@
     
 
     
-    <pubDate>Mon, 11 Jan 2021 12:49:27 -0000</pubDate>
-    <lastBuildDate>Mon, 11 Jan 2021 12:49:27 -0000</lastBuildDate>
+    <pubDate>Mon, 11 Jan 2021 19:52:58 -0000</pubDate>
+    <lastBuildDate>Mon, 11 Jan 2021 19:52:58 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -32,12 +32,27 @@
 
     
     
+   
+    
+    <item>
+      <title>gRPC in Xamarin</title>
+      <description>## Using gRPC With Xamarin
+In this article I will show you how to use gRPC with Xamarin Forms. In short why using gRPC?  
+From gRPC site:  
+&#34;gRPC is a modern op</description>
+      <link>https://joacimwall.github.io/grpc_in_xamarin/</link>
+      <pubDate>Mon, 11 Jan 2021 19:52:41 -0000</pubDate>
+      <source url="https://joacimwall.github.io/feed_rss_updated.xml">Joacim Wall Developer Blog</source>
+      <guid isPermaLink="true">https://joacimwall.github.io/grpc_in_xamarin/</guid>
+      
+    </item>
+    
     <item>
       <title>Using multilingual extension in Xamarin</title>
       <description>## Simplify translation management by using the Multilingual Extension
 In this previous article [Add multilingual support to Xamarin](https://joacimwall.github.</description>
       <link>https://joacimwall.github.io/multilingual_extension/</link>
-      <pubDate>Mon, 11 Jan 2021 09:51:55 -0000</pubDate>
+      <pubDate>Mon, 11 Jan 2021 19:52:41 -0000</pubDate>
       <source url="https://joacimwall.github.io/feed_rss_updated.xml">Joacim Wall Developer Blog</source>
       <guid isPermaLink="true">https://joacimwall.github.io/multilingual_extension/</guid>
       
@@ -48,13 +63,11 @@ In this previous article [Add multilingual support to Xamarin](https://joacimwal
       <description>## Adding multilingual support to Xamarin
 In this article I will show you how to add multilingual support to a Xamarin forms project. We will use standard Resou</description>
       <link>https://joacimwall.github.io/multilingual_support/</link>
-      <pubDate>Mon, 11 Jan 2021 09:33:58 -0000</pubDate>
+      <pubDate>Mon, 11 Jan 2021 19:52:41 -0000</pubDate>
       <source url="https://joacimwall.github.io/feed_rss_updated.xml">Joacim Wall Developer Blog</source>
       <guid isPermaLink="true">https://joacimwall.github.io/multilingual_support/</guid>
       
     </item>
-    
-   
     
   </channel>
 </rss>
