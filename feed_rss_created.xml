@@ -14,8 +14,8 @@
     
 
     
-    <pubDate>Sat, 09 Jan 2021 14:00:43 -0000</pubDate>
-    <lastBuildDate>Sat, 09 Jan 2021 14:00:43 -0000</lastBuildDate>
+    <pubDate>Mon, 11 Jan 2021 12:49:27 -0000</pubDate>
+    <lastBuildDate>Mon, 11 Jan 2021 12:49:27 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -33,9 +33,9 @@
     
     
     <item>
-      <title>Multilingual extension</title>
-      <description>## Simplify translation by using the Multilingual Extension
-In this previous article [Add multilingual support to Xamarin](https://joacimwall.github.io/#multili</description>
+      <title>Using multilingual extension in Xamarin</title>
+      <description>## Simplify translation management by using the Multilingual Extension
+In this previous article [Add multilingual support to Xamarin](https://joacimwall.github.</description>
       <link>https://joacimwall.github.io/multilingual_extension/</link>
       <pubDate>Sat, 09 Jan 2021 12:56:05 -0000</pubDate>
       <source url="https://joacimwall.github.io/feed_rss_created.xml">Joacim Wall Developer Blog</source>
@@ -43,7 +43,18 @@ In this previous article [Add multilingual support to Xamarin](https://joacimwal
       
     </item>
     
-   
+    <item>
+      <title>Add multilingual support to Xamarin</title>
+      <description>## Adding multilingual support to Xamarin
+In this article I will show you how to add multilingual support to a Xamarin forms project. We will use standard Resou</description>
+      <link>https://joacimwall.github.io/multilingual_support/</link>
+      <pubDate>Sat, 09 Jan 2021 11:18:00 -0000</pubDate>
+      <source url="https://joacimwall.github.io/feed_rss_created.xml">Joacim Wall Developer Blog</source>
+      <guid isPermaLink="true">https://joacimwall.github.io/multilingual_support/</guid>
+      
+    </item>
+    
+    
     
   </channel>
 </rss>

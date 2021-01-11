@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://joacimwall.github.io/multilingual_extension/">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Multilingual extension - Joacim Wall Developer Blog</title>
+    <title>Using multilingual extension in Xamarin - Joacim Wall Developer Blog</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,7 +32,14 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Simplify translation by using the Multilingual Extension", url: "#_top", children: [
+          {title: "Simplify translation management by using the Multilingual Extension", url: "#_top", children: [
+              {title: "Install the extension", url: "#install-the-extension" },
+              {title: "Setting the preferred property's for the extension.", url: "#setting-the-preferred-propertys-for-the-extension" },
+              {title: "Adding a new translation and synchronize", url: "#adding-a-new-translation-and-synchronize" },
+              {title: "Translate your resource files", url: "#translate-your-resource-files" },
+              {title: "Export your language files to external stakeholders", url: "#export-your-language-files-to-external-stakeholders" },
+              {title: "Import translations", url: "#import-translations" },
+              {title: "Changing existing translations", url: "#changing-existing-translations" },
           ]},
         ];
 
@@ -52,12 +59,104 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     
+    
+      
+    
 
-    <h2 id="simplify-translation-by-using-the-multilingual-extension">Simplify translation by using the Multilingual Extension</h2>
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../multilingual_support/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../multilingual_support/" class="btn btn-xs btn-link">
+        Add multilingual support to Xamarin
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="simplify-translation-management-by-using-the-multilingual-extension">Simplify translation management by using the Multilingual Extension</h2>
 <p>In this previous article <a href="https://joacimwall.github.io/#multilingual_support/">Add multilingual support to Xamarin</a> I show you how to add multilingual support to a Xamarin forms project. In this article I will show you how to use the <a href="https://github.com/JoacimWall/Visual-studio-multilingual-extension">Multilingual Extension</a> for simplify the synchronization from the master file to different language files. </p>
+<p><a href="https://github.com/JoacimWall/Blog_Samples/tree/main/Add%20multilingual%20support%20to%20Xamarin">Source code of Demo</a></p>
+<p>We are going to use this extension to simplify ans solve four main problem.<br />
+ * Synchronization of Resx files<br />
+ * Translation of texts by Google translate or Microsoft translate<br />
+ * Export of translations into csv or xlsx file for final translation by external stakeholder<br />
+ * Import of final translations from external stakholder  </p>
+<p>We will continue whit the same project as we started with in the previous article <a href="https://joacimwall.github.io/#multilingual_support/">Add multilingual support to Xamarin</a></p>
+<p><a href="https://github.com/JoacimWall/Blog_Samples/tree/main/Add%20multilingual%20support%20to%20Xamarin">Source code of Demo</a></p>
+<h3 id="install-the-extension">Install the extension</h3>
+<p>First we need to install the extension. below you will find the instructions for the different platforms. Remember to restart you visual studio after install for the extension to load.  </p>
+<h4 id="install-for-mac">Install for Mac</h4>
+<p>The Visual studio for Mac team has closed the signup for new developers to publish extensions. So you need to download the latest release from this page then go to visual studio mac and click "install from file" in the Exstension Mananger.<br />
+<a href="https://github.com/JoacimWall/Visual-studio-multilingual-extension/releases">Latest release</a></p>
+<h4 id="install-for-windows">Install for Windows</h4>
+<p>Go to Extension Manager and search for Multilingual Extension or Walltec and you will find it or use the link below. <br />
+<a href="https://marketplace.visualstudio.com/items?itemName=Walltec.MultilingualExtension">Multilingual extension</a></p>
+<h3 id="setting-the-preferred-propertys-for-the-extension">Setting the preferred property's for the extension.</h3>
+<p>Select tools/multilingual settings in visual studio <br />
+By default, this extension use Google's free translation lets keep that for now.  <br />
+This is limited to only 100 translations per hour. <br />
+In this dialog you can also change the master language that is 'en' by default.<br />
+Here should you also select your preferred export format, csv or xslt.<br />
+If you also want to handle the status for the texts in the master resx file, check the 'Add Comment node to master Resx file on sync' in settings dialog.</p>
+<p><img width=“150” height="400" src="https://joacimwall.github.io/img/multilingual_extension/MultilingualSettingsDialog.png"></p>
+<h3 id="adding-a-new-translation-and-synchronize">Adding a new translation and synchronize</h3>
+<p>There are two ways to sync the resx files. 
+ Right-click the master file and select "Sync all .xx-x.resx files with this". Then all files that are in the same folder and follow the naming standard .xx-xx.resx  will be synchronized with the master file or,<br />
+Right-click one of the language files (AppResources.fr-FR.resx) and select "Sync this .xx-x.resx file". This file will then be synchronized with the master file. </p>
+<p><img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/SyncAllFilePopUpDialog.png">
+<img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/SyncFilePopUpDialog.png"></p>
+<p>the synchronization will not only add translations to the language files it will also remove translation that are not present in the master file.</p>
+<p>So lets add a new translation "HTML is funny" into the master file this is easy done by just copy/past the last datanode from master file and change the name attribute and the value in the value filed. <br />
+Now Right-click the master file and select "Sync all .xx-x.resx files with this".  </p>
+<p><img alt="Screenshot" src="../img/multilingual_extension/add_new_data_node.png" />  </p>
+<p>Open the AppResources.fr-FR.resx and AppResources.es-ES.resx and scroll down and you will see that the sentence has bin added to these files. You will also see that the text is not translated yet and there is comment that has the value "New" on the node named HTML_Is_Funny and the node C_Sharp_Is_Love comment has value Final. The extension use the comment filed to track the status of the translation. The translation can have three different status that it can have in it's comment field.   </p>
+<p>New: The row will get this status after first synchronization. If the data row not exist in the target file. if the translation already exists then it gets the status "final" this is so you can start using this extension if you already have translation files that are translated.</p>
+<p>Need review: This status will it get after translation from one of the translation services.</p>
+<p>Final: This status will it get after import from csv/xslt file where the status column bin changed to final. You can also set this status in the target file if you don't want the row to be exported to external stakeholder for translation.</p>
+<p><img alt="Screenshot" src="../img/multilingual_extension/synced_file_sample.png" /></p>
+<h3 id="translate-your-resource-files">Translate your resource files</h3>
+<p>Now we would like to translate to different sentences you have added to your language files.  There are two ways to translate the resx files.
+Right-click the master file and select "Translate all .xx-x.resx files" Then all the language files will be Translated or Right-click one of the language files (AppResources.fr-FR.resx) and select "Translate this .xx-x.resx file".</p>
+<p>The extension will only translate values that has comment value set to "New". 
+After this your language files comment filed should changed from "New" to "Need review".   </p>
+<p><img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/TranslateAllFilePopUpDialog.png">
+<img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/TranslateFilePopUpDialog.png"></p>
+<h3 id="export-your-language-files-to-external-stakeholders">Export your language files to external stakeholders</h3>
+<p>If you now want to send the files to someone that not a developer you can export to Excel or Csv so they can validate the translations and change the comment value to "Final" so you can import the new/validated translation.  </p>
+<p>This is done by Right-click the master file and select "Export all .xx-xx.resx files". Then all files that are in the same folder and follow the naming standard .xx-xx.resx will be processed and all rows with status 'New' or 'Need review' will be exported. </p>
+<p>This will result in new Excel files in same folder as the resx files.  The stakeholder can now change the status to "Final" if all is correct or change the TargetLanguage and status to "Final" and tha translation will be update when you import the file.<br />
+<img alt="Screenshot" src="../img/multilingual_extension/Excel_export.png" /></p>
+<h3 id="import-translations">Import translations</h3>
+<p>When you get your translations files back from your stakeholders you just copy them to the same folder as the resx files and check that the users not have change de name of the files. Then you Right-click the Excel file and select  "Import Translation" and the file will get imported and the corresponding resx file will be updated.  </p>
+<h3 id="changing-existing-translations">Changing existing translations</h3>
+<p>If you change the text in an existing node or add a new node in the Master resx file and want to sync and translate this to all the language files. Right click somewhere on the data name = 'xxxxx' node and select "Sync and translate this node in all .xx-xx.resx files". This will translate this node in all language files and change status to "Need review". This feature is only implemented on mac in current version of the extension.           <br />
+<img alt="Screenshot" src="../img/multilingual_extension/SyncAndTranslateThisNode.png" /></p>
+<p>Thanks Joacim Wall  </p>
+<p><a href="https://github.com/JoacimWall/Blog_Samples/tree/main/Add%20multilingual%20support%20to%20Xamarin">Source code of Demo</a></p>
 
   <br>
     
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../multilingual_support/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../multilingual_support/" class="btn btn-xs btn-link">
+        Add multilingual support to Xamarin
+      </a>
+    </div>
+    
+  </div>
 
     <br>
 </div>

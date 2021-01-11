@@ -68,6 +68,8 @@ if the users device language is not int the list of translations then the app wi
 
 In the next Article i will show how to simplify management of synchronize and auto translation with Google or Microsoft services using [Multilingual Extension](https://github.com/JoacimWall/Visual-studio-multilingual-extension).  
 
+Thanks Joacim Wall
+
 [Source code of Demo](https://github.com/JoacimWall/Blog_Samples/tree/main/Add%20multilingual%20support%20to%20Xamarin)
 
            
