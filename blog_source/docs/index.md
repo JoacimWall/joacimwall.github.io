@@ -9,4 +9,6 @@ Latest Blogs
 
 [Adding multilingual support to Xamarin](https://joacimwall.github.io/#multilingual_support/)
 
-[Simplify translation management by using the Multilingual Extension](https://joacimwall.github.io/#multilingual_extension/)
+[Simplify translation management by using the Multilingual Extension](https://joacimwall.github.io/#multilingual_extension/)  
+
+[Using gRPC With Xamarin](https://joacimwall.github.io/#grpc_in_xamarin/)  

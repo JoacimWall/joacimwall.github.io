@@ -9,6 +9,7 @@ nav:
     - Home: index.md
     - Add multilingual support to Xamarin: multilingual_support.md  
     - Using multilingual extension in Xamarin: multilingual_extension.md
+    - gRPC in Xamarin: grpc_in_xamarin.md
 plugins:
   - rss:
       abstract_chars_count: 160

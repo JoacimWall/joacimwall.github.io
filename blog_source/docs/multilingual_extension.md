@@ -1,3 +1,11 @@
+---
+title: "Simplify translation management by using the Multilingual Extension"
+authors: ["joacim.Wall@gmail.com"]
+date: "2021-01-11 15:18"
+canonical_url: https://joacimwall.github.io/#multilingual_extension/
+---
+
+
 ## Simplify translation management by using the Multilingual Extension
 In this previous article [Add multilingual support to Xamarin](https://joacimwall.github.io/#multilingual_support/) I show you how to add multilingual support to a Xamarin forms project. In this article I will show you how to use the [Multilingual Extension](https://github.com/JoacimWall/Visual-studio-multilingual-extension) for simplify the synchronization from the master file to different language files. 
 
@@ -85,6 +93,11 @@ This will result in new Excel files in same folder as the resx files.  The stake
 ![Screenshot](img/multilingual_extension/SyncAndTranslateThisNode.png)
 
 Thanks Joacim Wall  
+
+If you have questions or comment please add them as Issues on my 
+[Blog_Samples Repository](https://github.com/JoacimWall/Blog_Samples/issues)     
+
+ 
 
 [Source code of Demo](https://github.com/JoacimWall/Blog_Samples/tree/main/Add%20multilingual%20support%20to%20Xamarin)
 
