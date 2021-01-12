@@ -3,6 +3,7 @@ title: "Simplify translation management by using the Multilingual Extension"
 authors: ["joacim.Wall@gmail.com"]
 date: "2021-01-11 15:18"
 canonical_url: https://joacimwall.github.io/#multilingual_extension/
+image: img/multilingual_extension/multilingual_extension.png
 ---
 
 

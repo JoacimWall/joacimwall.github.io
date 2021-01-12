@@ -14,8 +14,8 @@
     
 
     
-    <pubDate>Mon, 11 Jan 2021 19:52:58 -0000</pubDate>
-    <lastBuildDate>Mon, 11 Jan 2021 19:52:58 -0000</lastBuildDate>
+    <pubDate>Tue, 12 Jan 2021 07:41:20 -0000</pubDate>
+    <lastBuildDate>Tue, 12 Jan 2021 07:41:20 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -43,6 +43,8 @@ From gRPC site:
       <source url="https://joacimwall.github.io/feed_rss_created.xml">Joacim Wall Developer Blog</source>
       <guid isPermaLink="true">https://joacimwall.github.io/grpc_in_xamarin/</guid>
       
+      <enclosure url="https://joacimwall.github.io/img/grpc_in_xamarin/grpc_in_xamarin.png" type="image/png" length="33824" />
+      
     </item>
     
     <item>
@@ -53,6 +55,8 @@ In this previous article [Add multilingual support to Xamarin](https://joacimwal
       <pubDate>Mon, 11 Jan 2021 14:18:00 -0000</pubDate>
       <source url="https://joacimwall.github.io/feed_rss_created.xml">Joacim Wall Developer Blog</source>
       <guid isPermaLink="true">https://joacimwall.github.io/multilingual_extension/</guid>
+      
+      <enclosure url="https://joacimwall.github.io/img/multilingual_extension/multilingual_extension.png" type="image/png" length="37636" />
       
     </item>
     
@@ -65,9 +69,11 @@ In this article I will show you how to add multilingual support to a Xamarin for
       <source url="https://joacimwall.github.io/feed_rss_created.xml">Joacim Wall Developer Blog</source>
       <guid isPermaLink="true">https://joacimwall.github.io/multilingual_support/</guid>
       
+      <enclosure url="https://joacimwall.github.io/img/multilingual_support/multilingual_support_in_xamarin.png" type="image/png" length="35211" />
+      
     </item>
     
-   
+  
     
   </channel>
 </rss>
