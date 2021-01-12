@@ -92,7 +92,7 @@ From gRPC site:<br />
 <h3 id="lets-get-started-with-the-server">Lets get started with the server</h3>
 <p>Screenshots in this article is from Visual Studio For Mac but the process is the same for the Windows version of Visual Studio. 
 Create a gRPC project by select the template "gRPC Service" in new solution in Visual Studio and click "Next".</p>
-<p>I will name this Service "Grpc.Server" and press create in the next dialog.
+<p>I will name this service "Grpc.Server" and press create in the next dialog.
 <img alt="Screenshot" src="../img/grpc_in_xamarin/create_server_project.png" /></p>
 <p>After this we need to update the Grpc.AspNetCore NuGet to latest in my case 2.34.0<br />
 We also need to install the Grpc.AspNetCore.Web NuGet to latest in my case 2.34.0.</p>
@@ -102,12 +102,12 @@ Error: "/Users/joacimwall/.nuget/packages/grpc.tools/2.27.0/tools/linux_x64/prot
 Just close the solution and open it agin and build as you can see in the error it's try to use "grpc.tools/2.27.0" but we are on version 2.34.0</p>
 <h4 id="in-short-what-do-we-need-to-know">In short what do we need to know</h4>
 <p>gRPC use a Proto file to define the messages you can see the sample file in the Proto folder and it looks like this.<br />
-In this case we have a Greeter service and a Request that are the message we will get from the client and a Response that we will send to the client.
+In this case we have a Greeter service and a request that are the message we will get from the client and a response that we will send to the client.
 <img alt="Screenshot" src="../img/grpc_in_xamarin/proto_file.png" /></p>
 <p>In the Services folder you will find the GreeterService.cs this is the class that implement the functions that you has declared in the proto file in this case the HelloReply. If you create a new message in the proto file you need to build before you can override that Message in this class.   <br />
 <img alt="Screenshot" src="../img/grpc_in_xamarin/greeter_service.png" /></p>
 <h4 id="configure-aspnetcore-to-use-grpcaspnetcoreweb">Configure AspNetCore to use Grpc.AspNetCore.Web</h4>
-<p>We have one more file that are god to take o look at and that is the Startup.cs that looks like this from the start. he we need to change some lines to be able to get i to work with Xamarin.   <br />
+<p>We have one more file that are god to take a look at and that is the Startup.cs. It looks like this from the start. We need to change some lines to be able to get i to work with Xamarin.   <br />
 <img alt="Screenshot" src="../img/grpc_in_xamarin/startup_file.png" />
 In the Configure function
 add <br />
@@ -116,7 +116,7 @@ change the row:<br />
 endpoints.MapGrpcService<GreeterService>();
 to <br />
 endpoints.MapGrpcService<GreeterService>().EnableGrpcWeb();</p>
-<p>if you now try to start server and are on a mac or windows 7 you will get this error: <br />
+<p>If you now try to start server and are on a mac or windows 7 you will get this error: <br />
 Kestrel doesn't support HTTP/2 with TLS on macOS and older Windows versions such as Windows 7.
 <img alt="Screenshot" src="../img/grpc_in_xamarin/failed_to_bind_error.png" />
 To debug local on this machine we need use Kestrel without TLS.
@@ -142,20 +142,20 @@ Refractored.MvvmHelpers</p>
 Create a new folder named Service in the shared project and add a new class named GreeterService.cs<br />
 Now should your solution look like this:
  <img alt="Screenshot" src="../img/grpc_in_xamarin/project_structure.png" />
-For the gRPC to build the classes that we are going to override in the GreeterService class we need to modify the project file for the shared project. So right click the project and select "Edit Project file". 
+For the gRPC to build the classes that we are going to override in the GreeterService class we need to modify the project file for the shared project. Right click the project and select "Edit Project file". 
  <img alt="Screenshot" src="../img/grpc_in_xamarin/project_file_edit.png" />
-if you don't want to write all the lines you can copy from demo repository </p>
+If you don't want to write all the lines you can copy from demo repository </p>
 <p><a href="https://github.com/JoacimWall/Blog_Samples/tree/main/gRPC_Xamarin">Source code of Demo</a><br />
 Build the shared project and copy the content from the GreeterService.cs file in the demo repository to you GreeterService.cs file. Now it would look like this. We will explain the code below. 
 In the constructor we will create the client an connect to the server. <br />
-Then the "if Debug" statement is needed to be able to debug to the local server where we have none trusted certificate. If we was using a Azure App Service we would not need this.  </p>
+Then the "if Debug" statement is needed to be able to debug to the local server where we have no trusted certificate. If we was using a Azure App Service we would not need this.  </p>
 <p>The row with the Device.Android is if we use local Android Emulator for debugging  </p>
 <p><img alt="Screenshot" src="../img/grpc_in_xamarin/greeterService_file.png" /> </p>
 <p>Now open your App.xaml.cs and add a public object of type<br />
  public static Services.GreeterService GreeterService;</p>
 <p>And in your OnStart and OnResume Add this line<br />
  GreeterService = new Services.GreeterService(); </p>
-<p>Add a ViewModel to MainPage.xaml by creating a new class named MainPageViewModel.cs containing this 
+<p>Add a ViewModel to MainPage.xaml by creating a new class named MainPageViewModel.cs containing this. 
  <img alt="Screenshot" src="../img/grpc_in_xamarin/MainPageViewModel.png" /> <br />
 And update the MainPage.xaml to this<br />
 <img alt="Screenshot" src="../img/grpc_in_xamarin/MainPage.Xaml.png" /> </p>

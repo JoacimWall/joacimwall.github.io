@@ -8,22 +8,23 @@ image: img/multilingual_extension/multilingual_extension.png
 
 
 ## Simplify translation management by using the Multilingual Extension
-In this previous article [Add multilingual support to Xamarin](https://joacimwall.github.io/#multilingual_support/) I show you how to add multilingual support to a Xamarin forms project. In this article I will show you how to use the [Multilingual Extension](https://github.com/JoacimWall/Visual-studio-multilingual-extension) for simplify the synchronization from the master file to different language files. 
+In this previous article [Add multilingual support to Xamarin](https://joacimwall.github.io/#multilingual_support/) I show you how to add multilingual support to a Xamarin forms project. In this article I will show you how to use the [Multilingual Extension](https://github.com/JoacimWall/Visual-studio-multilingual-extension) for simplify the synchronization from the master file to different language files. We will also show auto translate and search for non used translation to kep you files clean.
 
 [Source code of Demo](https://github.com/JoacimWall/Blog_Samples/tree/main/Add%20multilingual%20support%20to%20Xamarin)
 
-We are going to use this extension to simplify ans solve four main problem.  
+We are going to use this extension to simplify ans solve five main problem.  
  * Synchronization of Resx files  
  * Translation of texts by Google translate or Microsoft translate  
  * Export of translations into csv or xlsx file for final translation by external stakeholder  
  * Import of final translations from external stakholder  
+ * List unused translation  
 
 We will continue whit the same project as we started with in the previous article [Add multilingual support to Xamarin](https://joacimwall.github.io/#multilingual_support/)
 
 [Source code of Demo](https://github.com/JoacimWall/Blog_Samples/tree/main/Add%20multilingual%20support%20to%20Xamarin)
 
 ### Install the extension
-First we need to install the extension. below you will find the instructions for the different platforms. Remember to restart you visual studio after install for the extension to load.  
+First we need to install the extension. Below you will find the instructions for the different platforms. Remember to restart you visual studio after installation for the extension to load.  
 
 #### Install for Mac
 The Visual studio for Mac team has closed the signup for new developers to publish extensions. So you need to download the latest release from this page then go to visual studio mac and click "install from file" in the Exstension Mananger.  
@@ -51,9 +52,9 @@ Right-click one of the language files (AppResources.fr-FR.resx) and select "Sync
 <img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/SyncAllFilePopUpDialog.png">
 <img width=“100” height="400" src="https://joacimwall.github.io/img/multilingual_extension/SyncFilePopUpDialog.png">
 
-the synchronization will not only add translations to the language files it will also remove translation that are not present in the master file.
+The synchronization will not only add translations to the language files it will also remove translation that are not present in the master file.
 
-So lets add a new translation "HTML is funny" into the master file this is easy done by just copy/past the last datanode from master file and change the name attribute and the value in the value filed.   
+So lets add a new translation "HTML is funny" into the master file this is easy done by just copy/past the last datanode from master file and change the name attribute and the value in the value filed. If you are on Windows and you still use the Resx editor you need to add new row.  
 Now Right-click the master file and select "Sync all .xx-x.resx files with this".  
   
 ![Screenshot](img/multilingual_extension/add_new_data_node.png)  
@@ -92,6 +93,11 @@ This will result in new Excel files in same folder as the resx files.  The stake
 ### Changing existing translations
  If you change the text in an existing node or add a new node in the Master resx file and want to sync and translate this to all the language files. Right click somewhere on the data name = 'xxxxx' node and select "Sync and translate this node in all .xx-xx.resx files". This will translate this node in all language files and change status to "Need review". This feature is only implemented on mac in current version of the extension.             
 ![Screenshot](img/multilingual_extension/SyncAndTranslateThisNode.png)
+
+### List unused translation
+Right-click the master(AppResources.resx) file and select "List unused translations". The extension will search trow all .cs and .xaml files and check if the translations in the master file is used. When done it will report all translations that are not used in the app to the search result windows and prompt you with dialog asking if you want to remove all unused translations.
+![Screenshot](img/multilingual_extension/ListUnusedTransaltions.png)
+
 
 Thanks Joacim Wall  
 
