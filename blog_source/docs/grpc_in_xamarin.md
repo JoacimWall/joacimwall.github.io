@@ -3,6 +3,7 @@ title: "Using gRPC With Xamarin Forms"
 authors: ["joacim.Wall@gmail.com"]
 date: "2021-01-11 20:50"
 canonical_url: https://joacimwall.github.io/#grpc_in_xamarin/
+enclosure: https://joacimwall.github.io/img/grpc_in_xamarin/grpc_in_xamarin.png
 ---
 
 ## Using gRPC With Xamarin
